@@ -1,0 +1,171 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1800px;
+    height: 1000px;
+    
+    overflow: hidden;
+    cursor: none;
+}
+.cursor{
+    display: flex;
+    position: fixed;
+    width: 6%;
+    height: auto;
+
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.gozt{
+    position: absolute;
+    width: fit-content;
+    z-index: 300;
+}
+
+
+
+@keyframes follow{
+    0%{
+        transform: rotateZ(40deg);
+    }
+    50%{
+        transform: rotateZ(-40deg);
+    }
+    100%{
+        transform: rotateZ(40deg);  
+    }
+
+}
+.ghost1{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    padding: 1%;
+    width: 6.7%;
+    height: auto;
+    pointer-events: none;
+    transition: 0.2s;
+}
+#g1{
+    animation: follow infinite 1s ;
+}
+
+.ghost2{
+    position: fixed;
+    display: flex;
+    top: 0%;
+    left: 30%;
+    padding: 1%;
+    width: 6%;
+    height: auto;
+    pointer-events: none;
+    transition: 0.3s;
+}
+#g2{
+    animation: follow infinite 2s ;
+}
+.ghost3{
+    position: fixed;
+    display: flex;
+    top: 40%;
+    left: 0;
+    padding: 6%;
+    width: 7%;
+    height: auto;
+    pointer-events: none;
+    transition: 0.35s;
+}
+#g3{
+    animation: follow infinite 3s ;
+}
+
+.ghost4{
+    position: fixed;
+    display: flex;
+    top: 0%;
+    left: 60%;
+    padding: 6%;
+    width: 7%;
+    height: auto;
+    pointer-events: none;
+    transition: 0.43s;
+}
+#g4{
+    animation: follow infinite 2.5s ;
+}
+.ghost5{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    padding: 3%;
+    width: 6.7%;
+    height: auto;
+    pointer-events: none;
+    transition: 0.51s;
+}
+#g5{
+    animation: follow infinite 1s ;
+}
+
+.ghost6{
+    position: fixed;
+    display: flex;
+    top: 0%;
+    left: 30%;
+    padding: 5%;
+    width: 6%;
+    height: auto;
+    pointer-events: none;
+    transition: 0.55s;
+}
+#g6{
+    animation: follow infinite 3s ;
+}
+.ghost7{
+    position: fixed;
+    display: flex;
+    top: 40%;
+    left: 0;
+    padding: 6%;
+    width: 7%;
+    height: auto;
+    pointer-events: none;
+    transition: 0.7s;
+}
+#g7{
+    animation: follow infinite 2.5s ;
+}
+
+@keyframes dissapear{
+    from{
+        color: #ffffff;
+    }
+    to{
+        color: #000000;
+    }
+}
+h3{
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    top: 0%;
+    text-align: center;
+    opacity: (40%);
+    width: 100%;
+    font-size: 500%;
+    animation: dissapear 10s;
+    pointer-events: none;
+}
+.trick{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    width: 20%;
+    color: #ffffff;
+    bottom: 0%;
+    padding: 20%;
+}
