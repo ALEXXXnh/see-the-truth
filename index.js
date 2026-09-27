@@ -4,8 +4,12 @@ window.addEventListener('mousemove', (e) =>{
     cursor.style.top = e.clientY + 'px';
 });
 
+
+
+
+
 const ghost1 = document.getElementById('g1')
-window.addEventListener('mousemove', (e)=>{
+window.addEventListener('mousemove', (e)=> {
     ghost1.style.left = e.clientX + 'px';
     ghost1.style.top = e.clientY + 'px';
 });
@@ -43,3 +47,32 @@ window.addEventListener('mousemove', (e)=>{
     ghost7.style.left = e.clientX + 'px';
     ghost7.style.top = e.clientY + 'px';
 });
+
+const bt1 = document.querySelector('.img')
+bt1.addEventListener('click', function()  {
+    document.querySelector('.gozt').style.display = 'none';
+    document.querySelector('.page2').style.display = 'flex';
+});
+const bt2 = document.querySelector('.B')
+bt2.addEventListener('click', function(){
+    document.querySelector('.page2').style.display = 'none';
+    document.querySelector('.page3').style.display = 'flex';
+});
+const bt3 = document.querySelector('.said')
+bt3.addEventListener('click', function(){
+    document.querySelector('.page3').style.display = 'none';
+    document.querySelector('.gozt').style.display = 'flex';
+});
+const bt4 = document.querySelector('.trick')
+bt4.addEventListener('click', function(){
+    document.querySelector('.gozt').style.display = 'none';
+    document.querySelector('.game').style.display = 'flex';
+});
+const bt5 = document.querySelector('.back')
+bt5.addEventListener('click', function(){
+    document.querySelector('.game').style.display = 'none';
+    document.querySelector('.gozt').style.display = 'flex';
+});
+
+
+
