@@ -24,7 +24,19 @@ body{
     width: fit-content;
     z-index: 300;
 }
-
+.play{
+    position: absolute;
+    width: 100%;
+    font-size: 50px;
+    color: #000000;
+    top: 82%;
+    left: 80%;
+    z-index: 299;
+    animation: dissapear 10s;
+}
+.play:hover{
+    color: #ffffff;
+}
 
 
 @keyframes follow{
@@ -189,10 +201,26 @@ body{
 }
 
 
+
+
+@keyframes appear{
+    from{
+        filter: brightness(0%);
+    }
+    to{
+            filter: brightness(100%);  
+    }
+}
+
+
+
+
+
 /*JOB SCENE*/
 
 .page2{
     display: none;
+    animation: appear 3s;
 }
 
 .job{
@@ -219,6 +247,7 @@ body{
 /*GRASS SCENE*/
 .page3{
     display: none;
+    animation: appear 3s;
 }
 
 
@@ -249,6 +278,7 @@ body{
 
 .game{
     display: none;
+    animation: appear 3s;
 }
 
 

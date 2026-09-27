@@ -4,6 +4,14 @@ window.addEventListener('mousemove', (e) =>{
     cursor.style.top = e.clientY + 'px';
 });
 
+const playm = document.querySelector('.play')
+
+    const music = document.querySelector('.bgmusic')
+    playm.addEventListener('click', () => {
+    music.play();
+    music.loop = "true";
+});
+
 
 
 
@@ -48,6 +56,12 @@ window.addEventListener('mousemove', (e)=>{
     ghost7.style.top = e.clientY + 'px';
 });
 
+
+
+
+
+
+
 const bt1 = document.querySelector('.img')
 bt1.addEventListener('click', function()  {
     document.querySelector('.gozt').style.display = 'none';
@@ -76,3 +90,23 @@ bt5.addEventListener('click', function(){
 
 
 
+const toy1 = document.querySelector('.cat')
+const soundcat = document.querySelector('.a1')
+toy1.addEventListener('click', ()=>{
+    soundcat.play();
+    soundcat.currentTime = 0;
+})
+
+const toy2 = document.querySelector('.bat')
+const soundbat = document.querySelector('.a2')
+toy2.addEventListener('click', ()=>{
+    soundbat.play();
+    soundbat.currentTime = 0;
+})
+
+const toy3 = document.querySelector('.candy')
+const soundcan = document.querySelector('.a3')
+toy3.addEventListener('click', ()=>{
+    soundcan.play();
+    soundcan.currentTime = 0;
+})
